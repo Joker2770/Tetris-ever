@@ -2,9 +2,9 @@
 Version=20.21.02
 Encoding=UTF-8
 Name=tetris-ever
-Comment=a simple tetris game writen with C, and render by SDL2.
+Comment=a simple tetris game writen with C, and be render by SDL2.
 Exec=tetris-ever
 Terminal=false
 Type=Application
-Categories=Games;Entertainment;
+Categories=Graphics;Games;Entertainment;
 Icon=${SNAP}/meta/gui/icon.png

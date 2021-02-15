@@ -416,6 +416,7 @@ bool init()
 		if (!SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1"))
 		{
 			printf("Warning: Linear texture filtering not enabled!");
+			success = false;
 		}
 
 		//Create window
@@ -440,6 +441,7 @@ bool init()
 				if (TTF_Init() == -1)
 				{
 					printf("SDL_ttf could not initialize! SDL_ttf Error: %s\n", TTF_GetError());
+					success = false;
 				}
 			}
 		}
@@ -461,6 +463,7 @@ bool loadMedia()
 		if (gFont == NULL)
 		{
 			printf("Failed to load TTF font: %s\n", TTF_GetError());
+			success = false;
 		}
 	}
 
