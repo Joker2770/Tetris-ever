@@ -147,7 +147,7 @@ int main(int argc, char *argv[])
 				else if (0 == strcmp(argv[1], "-TGM"))
 					i_mode = 2;
 				else if (0 == strcmp(argv[1], "-V") || 0 == strcmp(argv[1], "--version"))
-					printf("20.21.03\n");
+					printf("20.21.04\n");
 				else if (0 == strcmp(argv[1], "-H") || 0 == strcmp(argv[1], "--help"))
 					printf(
 						"%s [option]\n"
