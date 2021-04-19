@@ -30,11 +30,12 @@ SOFTWARE. */
 #include "tetris.h"
 #include "config.h"
 
-#ifdef _MSC_VER
-#include <windows.h>
-#else
-#include <unistd.h>
-#endif
+// for sleep
+// #ifdef _MSC_VER
+// #include <windows.h>
+// #else
+// #include <unistd.h>
+// #endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -229,11 +230,12 @@ int main(int argc, char *argv[])
 				render_rock(135, 125, shape_data->next_bit, true);
 				render_rock(shape_data->x * 10, shape_data->y * 10, shape_data->cur_bit, true);
 				SDL_RenderPresent(gRenderer);
-#ifdef _MSC_VER
-				Sleep(1000 * (1 - i_level / (i_level + 2)));
-#else
-				usleep(1000000 * (1 - i_level / (i_level + 2)));
-#endif
+// #ifdef _MSC_VER
+// 				Sleep(1000 * (1 - i_level / (i_level + 2)));
+// #else
+// 				usleep(1000000 * (1 - i_level / (i_level + 2)));
+// #endif
+				SDL_Delay(1000 * (1 - i_level / (i_level + 2)));
 				render_rock(shape_data->x * 10, shape_data->y * 10, shape_data->cur_bit, false);
 				SDL_RenderPresent(gRenderer);
 
