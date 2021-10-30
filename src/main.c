@@ -275,7 +275,7 @@ int main(int argc, char *argv[])
 					if (i_count > 0)
 					{
 						i_lines += i_count;
-						i_score += i_level * i_count * 10;
+						i_score += i_level * i_count;
 						char sTmp_lines[16] = "";
 						memset(sTmp_lines, 0, sizeof(sTmp_lines));
 						char sTmp_score[16] = "";
