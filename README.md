@@ -1,5 +1,6 @@
 # Tetris-ever
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8f73ac975e644fd0b3dff50a72f589c2)](https://app.codacy.com/gh/Joker2770/Tetris-ever?utm_source=github.com&utm_medium=referral&utm_content=Joker2770/Tetris-ever&utm_campaign=Badge_Grade_Settings)
 [![tetris-ever](https://snapcraft.io/tetris-ever/badge.svg)](https://snapcraft.io/tetris-ever)
 
 A simple tetris game is written with C, and is rendered by SDL2.
