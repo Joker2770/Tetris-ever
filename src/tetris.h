@@ -7,7 +7,7 @@
 
 /* MIT License
 
-Copyright (c) 2021 Joker2770
+Copyright (c) 2021-2023 Joker2770
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -71,7 +71,7 @@ static const uint16_t TGM[7][4] = {
 	{0x4159, 0x4596, 0x1596, 0x4156},
 	{0x156A, 0x4152, 0x156A, 0x4152}};
 
-int GMPOOL[12][22];
+static int GMPOOL[12][22];
 
 typedef struct rock_shape_data
 {
